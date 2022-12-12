@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="bg-info m-auto p-5 w-75"> 
+            <label> Product Name: </label>
+            <input id="productName" type="text" class="form-control">
+            <label> Product Price: </label>
+            <input id="productPrice" type="number" class="form-control">
+            <label> Product Category: </label>
+            <input id="productCategory" type="text" class="form-control">
+            <label> Product Description: </label>
+           <textarea id="productDesc" class="form-control"></textarea>
+           <button id="addBtn" onclick="addProduct()" class="btn btn-primary float-end my-2"> Add Product</button>
+           <input type="text" id="searchInput" placeholder="search by name....." class="form-control my-2">
+           <div class=" clearfix"></div>
+           <table class="table">
+            <thead>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th></th>
+                <th></th>
+            </thead>
+            <tbody id="tBody">
+
+            </tbody>
+        </table>
+        </div>
+
+
+
+
+
+        
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
